@@ -1,0 +1,9 @@
+﻿@page "/"
+@using BlazorComponent.I18n
+@inject I18n I18n
+
+<h1>Hello, world!</h1>
+@(I18n.T("Data"))
+Welcome to your new app.
+
+<SurveyPrompt Title="How is Blazor working for you?" />
