@@ -30,7 +30,7 @@ namespace TestI18nDemo.Extend
             {
                 string cultureApi = Path.Combine(localesDirectoryApi, culture + ".json");
                 bool existsCulture = await FileSystem.AppPackageFileExistsAsync(cultureApi);
-                if (!await FileSystem.AppPackageFileExistsAsync(cultureApi))
+                if (!existsCulture)
                 {
                     throw new Exception("Can't find path：" + cultureApi);
                 }
