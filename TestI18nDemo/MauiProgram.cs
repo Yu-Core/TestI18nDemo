@@ -25,7 +25,7 @@ public static class MauiProgram
 		builder.Services.AddSingleton<WeatherForecastService>();
 
 		builder.Services.AddMasaBlazor();
-        builder.Services.AddMasaBlazor().AddI18nForMauiBlazor("i18n");
+        builder.Services.AddMasaBlazor().AddI18nForMauiBlazor("wwwroot/i18n");
 		
         return builder.Build();
 	}
